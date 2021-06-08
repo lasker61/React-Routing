@@ -7,14 +7,17 @@ const Friend = (props) => {
         margin :'20px',
         border :"1px solid grey",
         borderRadius:'25px',
-        padding:'5px'
+        padding:'5px',
+        paddingBottom:'5px'
 
     }
     return (
         <div style={friendStyle}>
             <h4>Name:{name}</h4>
             <h5>Email:{email}</h5>
-            <Link to={`/friendDetail/${id}`}>Show details</Link>
+            <Link to={`/friendDetail/${id}`}>
+                <button>show details</button>
+            </Link>
         </div>
     );
 };
